@@ -121,7 +121,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:gravity="center"
-                    android:text="Posts"
+                    android:text="Eventcount"
                     android:textColor="#FFB7C4CB"
                     android:textSize="20sp" />
 
@@ -149,7 +149,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="0dp"
                     android:gravity="center"
-                    android:text="Following"
+                    android:text="CreatDays"
                     android:textColor="#FFB7C4CB"
                     android:textSize="20sp" />
 
