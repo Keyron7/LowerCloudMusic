@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistDeatilActivity">
+    <RelativeLayout
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/back1"
+            android:src="@mipmap/arrow"
+            android:background="#ffff"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp" />
+        <TextView
+            android:id="@+id/playlistname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playlist"
+            android:textSize="20sp"
+            android:textColor="#FF1C252A"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/details_title1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/title1"
+        android:layout_marginTop="0dp">
+        <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/details_image"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toEndOf="@+id/details_image"
+            android:gravity="center"
+            android:text="text1111111111111111"
+            android:textSize="20sp"
+            android:textColor="#FF1C252A" />
+
+        <TextView
+            android:id="@+id/details_myname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_name"
+            android:layout_alignStart="@+id/details_name"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="test11111111111"
+            android:textColor="#FF0091EA"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/details_logo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/details_myname"
+            android:layout_alignStart="@+id/details_myname"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/playlist" />
+
+        <TextView
+            android:id="@+id/details_number_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_myname"
+            android:layout_alignBottom="@+id/details_logo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/details_logo"
+            android:text="11tracks-1993"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/details_myname"
+            android:layout_alignBottom="@+id/details_logo"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/details_number_time"
+            android:src="@mipmap/dots" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/song_random"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/details_title1"
+        android:layout_marginTop="0dp">
+        <TextView
+            android:id="@+id/song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="#FF1C252A"
+            android:textSize="22sp"/>
+
+        <RadioButton
+            android:id="@+id/details_random"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/song_random"
+        android:layout_marginTop="0dp">
+    </ListView>
+    <RelativeLayout
+        android:id="@+id/listen"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:background="#ffff"
+            android:id="@+id/ibtn_playorpause_details"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/pb"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/details_songname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ibtn_playorpause_details"
+            android:clickable="true"
+            android:text="For Whom teh Bell Tolls"
+            android:textColor="#FF1C252A"
+            android:textSize="23sp"/>
+        <TextView
+            android:id="@+id/detailse_ablum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/ibtn_playorpause_details"
+            android:clickable="true"
+            android:text="Metallica-Ride the Lighting"
+            android:textColor="#FF758692"
+            android:textSize="18sp">
+
+        </TextView>
+        <ImageButton
+            android:background="#ffff"
+            android:src="@mipmap/dots"
+            android:id="@+id/details_into"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

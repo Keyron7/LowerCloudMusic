@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaActivity">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+         <ImageButton
+            android:id="@+id/back"
+             android:src="@mipmap/arrow"
+             android:background="#ffff"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JamesBrown"
+            android:textSize="20sp"
+            android:textColor="#FF1C252A"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:background="#ffff"
+            android:src="@mipmap/dots"
+            android:id="@+id/details"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ablum_logo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_music"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ablum_logo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp">
+
+        <RadioButton
+            android:id="@+id/rbtn_playrandowm"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp" />
+
+        <ImageButton
+            android:background="#ffff"
+            android:id="@+id/ibtn_previous"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageButton
+            android:background="#ffff"
+            android:id="@+id/ibtn_playorpause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+        <ImageButton
+            android:background="#ffff"
+            android:src="@mipmap/rewindblack"
+            android:id="@+id/ibtn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="110dp" />
+
+        <RadioButton
+            android:id="@+id/rbtn_playsequence"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rl_music"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="130dp">
+        <TextView
+            android:id="@+id/verson_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lynic snow"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:textColor="#FF1C252A"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/verson_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginBottom="0dp"
+            android:text="lynic snow"
+            android:textColor="#FF758692"
+            android:gravity="center"
+            android:textSize="21sp" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="50dp">
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/music_cur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:58"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/music_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="25dp"
+        android:gravity="center"
+        android:text="3:58"
+        android:textSize="20sp" />
+    
+</RelativeLayout>
+
+
+</RelativeLayout>

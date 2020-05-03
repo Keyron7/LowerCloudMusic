@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textSize="20sp"
+        android:textColor="#FF1C252A"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp" />
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="New Albums"
+        android:textColor="#FF1C252A"
+        android:textSize="20sp" />
+    <RelativeLayout
+        android:id="@+id/albums"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/text">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ablum_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/albums"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="Recommendations"
+        android:textColor="#FF1C252A"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/albums"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="See All"
+        android:id="@+id/see_all"
+        android:textColor="#FF0091EA"
+        android:textSize="20sp" />
+    <RelativeLayout
+        android:layout_below="@+id/see_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/two_album"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_above="@+id/listen"
+            android:layout_marginBottom="0dp" />
+
+        <RelativeLayout
+            android:id="@+id/listen"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true">
+            <ImageButton
+                android:background="#ffff"
+                android:id="@+id/ibtn_playorpause_home"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/pb"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/ibtn_playorpause_home"
+                android:clickable="true"
+                android:text="For Whom teh Bell Tolls"
+                android:textColor="#FF1C252A"
+                android:textSize="23sp"/>
+            <TextView
+                android:id="@+id/home_ablum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/ibtn_playorpause_home"
+                android:clickable="true"
+                android:text="Metallica-Ride the Lighting"
+                android:textColor="#FF758692"
+                android:textSize="18sp">
+
+            </TextView>
+            <ImageButton
+                android:background="#ffff"
+                android:src="@mipmap/dots"
+                android:id="@+id/into"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
